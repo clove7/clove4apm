@@ -188,3 +188,11 @@ Two rules for anything added:
 
 - A probe that cannot measure returns `None`. Never a zero, never a guess.
 - No storage, no files, no background threads. Values in, one struct out.
+
+## License
+
+MIT — see [LICENSE-MIT](LICENSE-MIT).
+
+Copyright (c) 2026 clove7. Using it only requires keeping that notice with any
+copy or substantial portion of the source; you do not need to mention it in an
+application you ship.

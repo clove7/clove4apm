@@ -4,6 +4,9 @@ version = "0.0.0"
 edition = "2024"
 description = "Application Performance Monitoring that returns a struct: latency percentiles, memory-leak detection and health verdicts, with no storage and no background threads. Under active development — feedback, issues and contributions to the framework are welcome."
 readme = "README.md"
+license = "MIT"
+authors = ["clove7"]
+repository = "https://github.com/clove7/clove4apm"
 keywords = ["apm", "monitoring", "performance", "metrics", "observability"]
 categories = ["development-tools::profiling"]
 
