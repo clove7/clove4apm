@@ -1,0 +1,24 @@
+[package]
+name = "clove4apm"
+version = "0.0.0"
+edition = "2024"
+description = "Application Performance Monitoring that returns a struct: latency percentiles, memory-leak detection and health verdicts, with no storage and no background threads. Under active development — feedback, issues and contributions to the framework are welcome."
+readme = "README.md"
+keywords = ["apm", "monitoring", "performance", "metrics", "observability"]
+categories = ["development-tools::profiling"]
+
+[features]
+default = []
+# Counting global allocator (live = allocated - freed). The consumer sets it
+# as #[global_allocator]; the lib only provides the type and the counters.
+alloc-obs = []
+
+[dependencies]
+sysinfo = "0.39.6"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61.2", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_System_ProcessStatus",
+] }
